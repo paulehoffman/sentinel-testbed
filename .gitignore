@@ -1,0 +1,2 @@
+# Allow local shell files, for copying to the destination directories
+*.sh
