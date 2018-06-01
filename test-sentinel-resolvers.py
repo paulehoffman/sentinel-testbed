@@ -18,7 +18,7 @@ resolvers_to_try = [
 	["Yandex.DNS Basic", "77.88.8.8"],
 	["Unbound 1.7.1", "165.254.24.232"],
 	["BIND 9.12.1 good", "165.254.24.234"],
-	["BIND 9.12.1 bad", "165.254.24.235"]
+	["BIND 9.12 with only KSK2010", "165.254.24.235"]
 ]
 
 servers_to_try = [
