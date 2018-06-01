@@ -77,7 +77,7 @@ function sentinel_summary(in_array) {
 	var status = "";
 	if (this_is_ta && !this_not_ta && !this_bogus) { status = "Vnew" }
 	else if (!this_is_ta && this_not_ta && !this_bogus) { status = "Vold" }
-	else if (this_is_ta && this_not_ta && !this_bogus) { status = "Vleg" }
+	else if (this_is_ta && this_not_ta && !this_bogus) { status = "Vind" }
 	else if (this_is_ta && this_not_ta && this_bogus) { status = "nonV" }
 	else { status = "other" }
 	return [ these_labels, status ];

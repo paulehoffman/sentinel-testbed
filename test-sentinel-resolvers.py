@@ -92,7 +92,7 @@ if __name__ == '__main__':
 		elif (not(this_is_ta) and this_not_ta and not(this_bogus)):
 			status = "Vold"
 		elif (this_is_ta and this_not_ta and not(this_bogus)):
-			status = "Vleg"
+			status = "Vind"
 		elif (this_is_ta and this_not_ta and this_bogus):
 			status = "nonV"
 		else:
