@@ -14,14 +14,17 @@ var labels_found = { "jsfetch": [], "imgfetch": [], "jqfetch": [] };
 var results_found = { "jsfetch": [], "imgfetch": [], "jqfetch": [] };
 </script>
 
-<!-- Test style 1: Success is based on filling in the "jsfetch" object from scripts as they are called. -->
-<!-- Create an object, then fill the object from external scripts -->
+<!-- Test style 1: Success is based on filling in the "jsfetch" object from scripts as they are called.
+Create an object, then fill the object from external scripts 
+Inspired by Paul Hoffman. -->
 <script>var jsfetch = {};</script>
 <script src="http://root-key-sentinel-is-ta-20326.sentinel.research.icann.org/is-ta.js"></script>
 <script src="http://root-key-sentinel-not-ta-20326.sentinel.research.icann.org/not-ta.js"></script>
 <script src="http://bogus.sentinel.research.icann.org/bogus.js"></script>
 
-<!-- Test style 2: Success is based on fetching images and filling in the "imgfetch" object by checking the resulting height (0 means not fetched) -->
+<!-- Test style 2: Success is based on fetching images and filling in the "imgfetch" object by
+checking the resulting height (0 means not fetched).
+Inspired by Warren Kumari. -->
 <p hidden>
 <img id="imgfetch_is_ta" src="http://root-key-sentinel-is-ta-20326.sentinel.research.icann.org/tiny.gif"/>
 <img id="imgfetch_not_ta" src="http://root-key-sentinel-not-ta-20326.sentinel.research.icann.org/tiny.gif"/>
@@ -33,7 +36,9 @@ if (imgfetch_not_ta.height > 0) { labels_found["imgfetch"].push("not-ta") }
 if (imgfetch_bogus.height > 0) { labels_found["imgfetch"].push("bogus") }
 </script>
 
-<!-- Test style 3: Success is based on resolving URLs with XMLHttpRequest via jQuery and filling in the "jqfetch" object based on if there was a result. -->
+<!-- Test style 3: Success is based on resolving URLs with XMLHttpRequest via jQuery and filling 
+in the "jqfetch" object based on if there was a result.
+Inspired by Ray Bellis and Noah Ross. -->
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script>
 // It doesn't matter what the file type is if we use the HEAD method

@@ -2,7 +2,7 @@ This testbed consists of two small example programs to test draft-ietf-dnsop-ksk
 
 `make-sentinel-js.py` creates an HTML file that has three different examples of how
 to implement kskroll-sentinel in JavaScript in a client.
-The first implementation was inspired by Warren Kumari, the second by Paul Hoffman,
+The first implementation was inspired by Paul Hoffman, the second by Warren Kumari,
 and the third by Ray Bellis and Noah Ross. Its purpose is to show that
 there are many ways to do the client side of draft-ietf-dnsop-kskroll-sentinel.
 
